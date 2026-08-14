@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katt-Dev :3</title>
+    <!-- Quicksand font for a soft, cozy, and rounded look -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Subtle background animation container -->
+    <div id="bg-animation"></div>
+
+    <header>
+        <div class="logo">
+            <i class="fas fa-cat logo-icon"></i>
+            Katt-Dev <span>:3</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-target="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-target="alya">CatGirlAlya</a></li>
+                <li><a href="#" class="nav-link" data-target="umi">CatGirlUmi</a></li>
+                <li><a href="#" class="nav-link" data-target="community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- HOME PAGE -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1>Nya~ Welcome to <span class="highlight">Katt-Dev</span></h1>
+                <p>A cozy little development organization bringing cute, polished, and playful projects to life.</p>
+                <div class="hero-buttons">
+                    <button class="btn nav-btn" data-target="community"><i class="fab fa-discord"></i> Join Community</button>
+                </div>
+            </div>
+            
+            <div class="founders-preview">
+                <div class="card preview-card nav-btn" data-target="alya">
+                    <div class="card-icon"><i class="fas fa-paw"></i></div>
+                    <h3>CatGirlAlya</h3>
+                    <p>Co-founder & Developer</p>
+                </div>
+                <div class="card preview-card nav-btn" data-target="umi">
+                    <div class="card-icon"><i class="fas fa-paw"></i></div>
+                    <h3>CatGirlUmi</h3>
+                    <p>Co-founder & Designer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATGIRLALYA PAGE -->
+        <section id="alya" class="page">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="CGA.png" alt="CatGirlAlya" class="profile-img" onerror="this.src='https://via.placeholder.com/150/2d1b42/8a4fff?text=:3'">
+                </div>
+                <div class="profile-info card">
+                    <h2>CatGirlAlya <i class="fas fa-cat subtle-icon"></i></h2>
+                    <p class="role">Co-Founder of Katt-Dev</p>
+                    <div class="about-me">
+                        <p>Hi! I'm Alya. I love writing clean code, building cozy systems, and drinking way too much coffee. When I'm not developing, I'm probably sleeping in a sunbeam.</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <!-- Replace # with actual links -->
+                        <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="Twitch"><i class="fab fa-twitch"></i></a>
+                    </div>
+
+                    <div class="support-section">
+                        <!-- Only ONE support button as requested -->
+                        <a href="YOUR_KOFI_LINK_HERE" class="btn kofi-btn" target="_blank">
+                            <i class="fas fa-mug-hot"></i> Support me on Ko-fi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATGIRLUMI PAGE -->
+        <section id="umi" class="page">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="CGU.png" alt="CatGirlUmi" class="profile-img" onerror="this.src='https://via.placeholder.com/150/2d1b42/ff479d?text=Nya'">
+                </div>
+                <div class="profile-info card">
+                    <h2>CatGirlUmi <i class="fas fa-cat subtle-icon"></i></h2>
+                    <p class="role">Co-Founder of Katt-Dev</p>
+                    <div class="about-me">
+                        <p>Nya! I'm Umi. I design cute interfaces, manage our community, and make sure everything we build has that special spark. Let's make something amazing together!</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <!-- Replace # with actual links -->
+                        <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <div class="support-section">
+                        <!-- Only ONE support button as requested -->
+                        <a href="YOUR_PATREON_LINK_HERE" class="btn patreon-btn" target="_blank">
+                            <i class="fab fa-patreon"></i> Support me on Patreon
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMMUNITY PAGE -->
+        <section id="community" class="page">
+            <div class="community-container card">
+                <div class="community-header">
+                    <i class="fab fa-discord community-icon"></i>
+                    <h2>The Neko Lounge</h2>
+                    <p>Join the official Katt-Dev Discord server!</p>
+                </div>
+                
+                <div class="community-content">
+                    <p>We're building a cozy, friendly community for developers, designers, and friends. Whether you want to chat about code, share cute cat pictures, or get updates on our projects, there's a spot on the couch for you.</p>
+                    
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Cozy & welcoming atmosphere</li>
+                        <li><i class="fas fa-check-circle"></i> Direct access to Alya & Umi</li>
+                        <li><i class="fas fa-check-circle"></i> Exclusive project sneak peeks</li>
+                        <li><i class="fas fa-check-circle"></i> Custom cute bot features (coming soon!)</li>
+                    </ul>
+                </div>
+
+                <a href="YOUR_DISCORD_INVITE_LINK_HERE" class="btn discord-btn" target="_blank">
+                    <i class="fab fa-discord"></i> Join Our Server
+                </a>
+                
+                <!-- Optional stats area for the future -->
+                <div class="server-status">
+                    <span class="status-dot"></span> <span id="member-count">Community opening soon!</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
